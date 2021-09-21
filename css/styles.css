@@ -39,20 +39,71 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+/* STYLE RESET */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+  outline: 1px solid tomato;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Header style */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .logo-header {
   color: #000000;
 }
+.logo {
+  margin-right: 93px;
+}
 .site-nav {
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
-.site-nav-link {
-  color: var(--text-title-color);
-  font-weight: 500;
-  line-height: 1.14;
-  text-decoration: none;
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 /* Navigation */
+.site-nav-link {
+  display: block;
+  color: var(--text-title-color);
+  font-weight: 500;
+  line-height: 1.17;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav-link:hover,
 .site-nav-link:focus,
 .site-nav-link:active {
@@ -63,18 +114,27 @@ body {
 }
 /* Contacts */
 .connect-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
   list-style: none;
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.17;
 }
 .connect-header .link {
+  display: block;
   color: var(--text-prime-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .connect-header .link:hover,
 .connect-header .link:focus {
   color: var(--accent-color);
+}
+.connect-header-item:not(:last-child) {
+  margin-right: 50px;
 }
 /* Hero style */
 .hero {

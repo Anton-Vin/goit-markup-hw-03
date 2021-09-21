@@ -8,31 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
         <!-- Верхняя линия -->
-        <nav>
-            <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="site-nav-link">Студия</a></li>
-                <li><a href="./portfolio.html" class="site-nav-link current">Портфолио</a></li>
-                <li><a href="#contacts" class="site-nav-link">Контакты</a></li>
-            </ul>
-        </nav>
-        <!-- mail,tel -->
-        <div>
+        <div class="container">
+            <nav class="header-nav">
+                <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
+                <ul class="site-nav list">
+                    <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Студия</a></li>
+                    <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link current">Портфолио</a></li>
+                    <li class="site-nav-item"><a href="#contacts" class="site-nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- mail,tel -->
+    
             <ul class="connect-header list">
-                <li><a href="mailto:info@devstudio.com" class="connect-header link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="connect-header link">+38 096 111 11 11</a></li>
+                <li class="connect-header-item"><a href="mailto:info@devstudio.com"
+                       class="connect-header link">info@devstudio.com</a></li>
+                <li class="connect-header-item"><a href="tel:+380961111111" class="connect-header link">+38 096 111 11
+                        11</a></li>
             </ul>
         </div>
     </header>
     <main>
         <!-- Портфель -->
         <section>
-            <h1 class="filter" style="display: none;">Портфолио</h1>
+            <div class="container">
+            <h1 class="filter" hidden>Портфолио</h1>
             <ul class="filter list">
                 <li><button type="button" class="filter-btn btn">Веб-сайты</button></li>
                 <li><button type="button" class="filter-btn btn">Приложения</button></li>
@@ -58,10 +65,12 @@
                 <li><a class="projekt-link link" href=""><img src="images/img-2.jpg" alt="наушники" width="370"><h2 class="projekt-titles">Growing Business</h2></a>
                 <p class="projekt-text">Приложение</p></li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- Подвал -->
     <footer class="footer">
+        <div class="container">
         <a href="" class="logo">Web<span class="logo-footer">Studio</span></a>
         <address class="connect-footer " id="contacts">
             <ul class="connect-footer-list list">
@@ -70,6 +79,8 @@
                 <li><a class="connect-footer-mail link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
+    </div>
     </body>
 </html>
