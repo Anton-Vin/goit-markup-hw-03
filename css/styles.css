@@ -61,14 +61,6 @@ li {
 img {
   vertical-align: top;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
 }
 .visually-hidden {
   position: absolute;
@@ -128,6 +120,7 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+
 /* STYLE RESET */
 h1,
 h2,
@@ -154,14 +147,13 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-  /* outline: 1px solid tomato; */
 }
 .section {
   width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid blueviolet; */
 }
+
 /* Header style */
 .header {
   padding: 0;
@@ -186,6 +178,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 /* Navigation */
 .site-nav-link {
   display: block;
@@ -380,10 +373,8 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  /* outline: 1px solid blue; */
 }
 .projekt-item {
-  /* outline: 1px solid fuchsia; */
   flex-basis: calc(100% / 3 -30px);
   margin-top: 30px;
   margin-left: 30px;
