@@ -153,16 +153,14 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
   margin: 0px auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .section {
   width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid blueviolet;
+  /* outline: 2px solid blueviolet; */
 }
 /* Header style */
 .header {
@@ -380,8 +378,18 @@ img {
 .projekt {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  /* outline: 1px solid blue; */
+}
+.projekt-item {
+  /* outline: 1px solid fuchsia; */
+  flex-basis: calc(100% / 3 -30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .projekt-titles {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -392,6 +400,14 @@ img {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-prime-color);
+}
+.sign {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 /* footer style */
 .footer {
@@ -426,12 +442,3 @@ img {
 .connect-footer-mail:focus {
   color: var(--accent-color);
 }
-/* ------BORDER PORTFOLIO----
-position: absolute;
-width: 370px;
-height: 404px;
-left: 615px;
-top: 696px;
-background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-sizing: border-box; */
