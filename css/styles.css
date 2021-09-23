@@ -1,3 +1,87 @@
+/* -----RESET------ */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+/* -----RESET END------ */
+
 :root {
   --text-prime-color: #757575;
   --text-title-color: #212121;
@@ -7,6 +91,7 @@
   --bg-second-color: #f5f4fa;
   --bg-hero-footer: #2f303a;
 }
+
 /* general styles */
 body {
   color: var(--text-color);
@@ -30,6 +115,10 @@ body {
 .btn {
   font-family: inherit;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
 }
 .logo {
   color: var(--accent-color);
@@ -55,19 +144,29 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
   margin: 0px auto;
   outline: 1px solid tomato;
 }
 .section {
+  width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
+  outline: 2px solid blueviolet;
 }
 /* Header style */
 .header {
+  padding: 0;
   border-bottom: 1px solid #ececec;
 }
 .logo-header {
@@ -112,7 +211,7 @@ ul {
 .site-nav-link.current {
   color: var(--accent-color);
 }
-/* Contacts */
+
 .connect-header {
   display: flex;
   align-items: center;
@@ -138,24 +237,37 @@ ul {
 }
 /* Hero style */
 .hero {
+  padding: 0;
   background-color: var(--bg-hero-footer);
   text-align: center;
   letter-spacing: 0.06em;
 }
+
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.37;
 }
 .hero-btn {
+  width: 200px;
+  margin-bottom: 200px;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--text-white-color);
   background-color: var(--accent-color);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.9;
+  line-height: 1.88;
   letter-spacing: 0.06em;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
@@ -164,34 +276,65 @@ ul {
 .feature {
 }
 .feature-title {
+  margin-bottom: 10px;
   line-height: 1.14;
 }
 .feature-list {
+  display: flex;
   line-height: 1.71;
+}
+.feature-item {
+  width: 270px;
+  /* height: 101px; */
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-text {
   color: var(--text-prime-color);
 }
 /* services provided style */
+.service {
+  padding-top: 0;
+}
+/* .cont-service {
+  padding: 0;
+} */
 .service-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   text-transform: none;
+}
+.service-list {
+  display: flex;
+  /* padding-bottom: 94px; */
+}
+.service-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* team style */
 .team {
   background-color: var(--bg-second-color);
 }
 .team-title {
+  /* padding-top: 94px; */
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   text-transform: none;
 }
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-bottom: 94px; */
   line-height: 1.9;
+}
+.team-item {
+  justify-content: space-between;
 }
 .team-name {
   font-weight: 500;
